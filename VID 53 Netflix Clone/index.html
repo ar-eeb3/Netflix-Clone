@@ -11,9 +11,26 @@
 </head>
 
 <body>
+    <div class="splash-screen">
+        <div class="logo-container">
+            <img  src="assets/img/logo.svg" alt="Logo" class="logo">
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+
+    <script>
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                document.querySelector(".splash-screen").style.display = "none";
+            }, 3000); // 3 seconds
+        });
+    </script>
+
+
     <div class="main">
         <nav>
-            <span><img width="200px" src="assets/img/logo.svg" alt="NETFLIX LOGO"></span>
+            <span><img width="240px" src="assets/img/logo.svg" alt="NETFLIX LOGO"></span>
 
             <div>
                 <button class="btn ">English</button>
